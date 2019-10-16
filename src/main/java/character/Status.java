@@ -1,44 +1,39 @@
 package character;
 
-import java.util.HashMap;
-
 public class Status {
 
-    private int str;
-    private int dex;
-    private int con;
-    private int inte;
-    private int sab;
-    private int car;
+    private int strength;
+    private int dexterity;
+    private int constitution;
+    private int intelligence;
+    private int wisdom;
+    private int carisma;
     private int modStr;
     private int modDex;
     private int modCon;
-    private int modInte;
-    private int modSab;
+    private int modInt;
+    private int modWis;
     private int modCar;
+
+    public Status(int strength, int dexterity, int constitution, int intelligence, int wisdom, int carisma) {
+        this.strength = strength;
+        this.dexterity = dexterity;
+        this.constitution = constitution;
+        this.intelligence = intelligence;
+        this.wisdom = wisdom;
+        this.carisma = carisma;
+        this.modStr = calcModifier(strength);
+        this.modDex = calcModifier(dexterity);
+        this.modCon = calcModifier(constitution);
+        this.modInt = calcModifier(intelligence);
+        this.modWis = calcModifier(wisdom);
+        this.modCar = calcModifier(carisma);
+    }
 
     public static int calcModifier(int status) {
 
         int statusModifier = (status / 2) - 5;
         return statusModifier;
-    }
-
-    public Status() {
-    }
-
-    public Status(int str, int dex, int con, int inte, int sab, int car) {
-        this.str = str;
-        this.dex = dex;
-        this.con = con;
-        this.inte = inte;
-        this.sab = sab;
-        this.car = car;
-        this.modStr = calcModifier(str);
-        this.modDex = calcModifier(dex);
-        this.modCon = calcModifier(con);
-        this.modInte = calcModifier(inte);
-        this.modSab = calcModifier(sab);
-        this.modCar = calcModifier(car);
     }
 
     public int getModStr() {
@@ -53,63 +48,63 @@ public class Status {
         return modCon;
     }
 
-    public int getModInte() {
-        return modInte;
+    public int getModInt() {
+        return modInt;
     }
 
-    public int getModSab() {
-        return modSab;
+    public int getModWis() {
+        return modWis;
     }
 
     public int getModCar() {
         return modCar;
     }
 
-    public int getStr() {
-        return str;
+    public int getStrength() {
+        return strength;
     }
 
-    public void setStr(int str) {
-        this.str = str;
+    public void setStrength(int strength) {
+        this.strength = strength;
     }
 
-    public int getDex() {
-        return dex;
+    public int getDexterity() {
+        return dexterity;
     }
 
-    public void setDex(int dex) {
-        this.dex = dex;
+    public void setDexterity(int dexterity) {
+        this.dexterity = dexterity;
     }
 
-    public int getCon() {
-        return con;
+    public int getConstitution() {
+        return constitution;
     }
 
-    public void setCon(int con) {
-        this.con = con;
+    public void setConstitution(int constitution) {
+        this.constitution = constitution;
     }
 
-    public int getInte() {
-        return inte;
+    public int getIntelligence() {
+        return intelligence;
     }
 
-    public void setInte(int inte) {
-        this.inte = inte;
+    public void setIntelligence(int intelligence) {
+        this.intelligence = intelligence;
     }
 
-    public int getSab() {
-        return sab;
+    public int getWisdom() {
+        return wisdom;
     }
 
-    public void setSab(int sab) {
-        this.sab = sab;
+    public void setWisdom(int wisdom) {
+        this.wisdom = wisdom;
     }
 
-    public int getCar() {
-        return car;
+    public int getCarisma() {
+        return carisma;
     }
 
-    public void setCar(int car) {
-        this.car = car;
+    public void setCarisma(int carisma) {
+        this.carisma = carisma;
     }
 }
