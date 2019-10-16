@@ -10,6 +10,18 @@ public class Status {
     private int inte;
     private int sab;
     private int car;
+    private int modStr;
+    private int modDex;
+    private int modCon;
+    private int modInte;
+    private int modSab;
+    private int modCar;
+
+    public static int calcModifier(int status) {
+
+        int statusModifier = (status / 2) - 5;
+        return statusModifier;
+    }
 
     public Status() {
     }
@@ -21,12 +33,36 @@ public class Status {
         this.inte = inte;
         this.sab = sab;
         this.car = car;
+        this.modStr = calcModifier(str);
+        this.modDex = calcModifier(dex);
+        this.modCon = calcModifier(con);
+        this.modInte = calcModifier(inte);
+        this.modSab = calcModifier(sab);
+        this.modCar = calcModifier(car);
     }
 
-    public int calcModifier(int status) {
+    public int getModStr() {
+        return modStr;
+    }
 
-        int statusModifier = (status / 2) - 5;
-        return statusModifier;
+    public int getModDex() {
+        return modDex;
+    }
+
+    public int getModCon() {
+        return modCon;
+    }
+
+    public int getModInte() {
+        return modInte;
+    }
+
+    public int getModSab() {
+        return modSab;
+    }
+
+    public int getModCar() {
+        return modCar;
     }
 
     public int getStr() {

@@ -1,15 +1,15 @@
 package tests;
 
-import character.Nivel;
+import character.Level;
 
 public class TestNumberFeats {
 
     public static void main(String[] args) {
-        Nivel nivel = new Nivel();
+        Level nivel = new Level();
 
-        nivel.setNivel(5);
+        nivel.setLevel(5);
 
-        System.out.println(nivel.getNivel());
-        System.out.println(nivel.numeroFeats(nivel.getNivel()));
+        System.out.println(nivel.getLevel());
+        System.out.println(nivel.numeroFeats(nivel.getLevel()));
     }
 }
