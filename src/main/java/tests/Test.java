@@ -1,22 +1,18 @@
 package tests;
 
+import character.Classe;
+import character.Level;
+import character.Pc;
 import character.race.races.Elf;
-import enums.AbilityScoreType;
-
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Map;
 
 public class Test {
 
     public static void main(String[] args) {
 
-        Elf elf = new Elf(16, 14, 10, 12, 13, 11);
+        Elf elf = new Elf(12, 14,10,10,10,10);
+        Level level = new Level();
+        Classe classe = new Classe();
 
-        System.out.println(elf.getModDex());
-        System.out.println(elf.getModCon());
-        System.out.println(elf.getImmunities());
-        System.out.println(elf.getSpeed());
-        System.out.println(elf.getFavoredClass());
+
     }
 }

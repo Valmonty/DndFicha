@@ -9,7 +9,7 @@ public class Classe {
     private int ref;
     private int will;
     private int skillPoints;
-    private String abilities;
+    private String[] abilities;
 
     public String getName() {
         return name;
@@ -67,11 +67,11 @@ public class Classe {
         this.skillPoints = skillPoints;
     }
 
-    public String getAbilities() {
+    public String[] getAbilities() {
         return abilities;
     }
 
-    public void setAbilities(String abilities) {
+    public void setAbilities(String[] abilities) {
         this.abilities = abilities;
     }
 

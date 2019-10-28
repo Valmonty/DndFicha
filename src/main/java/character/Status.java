@@ -1,8 +1,6 @@
 package character;
 
-import java.util.HashMap;
-
-public class Status {
+public abstract class Status {
 
     private int str;
     private int dex;
