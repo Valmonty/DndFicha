@@ -14,7 +14,7 @@ public class Level {
 
         if (getLevel() == 1) {
 
-            firstHD = Status.calcModifier(con) + classe.getHd();
+//            firstHD = Status.calcModifier(con) + classe.getQuantHD();
         }
         return firstHD;
     }
