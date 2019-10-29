@@ -14,9 +14,9 @@ public abstract class Race extends Status {
     public static String favoredClass;
 
     public static String skillBonus;
-    public static List<String> proficiencies = new ArrayList<String>();
-    public static List<String> languages = new ArrayList<String>();
-    public static List<String> raceAbilities = new ArrayList<String>();
+    public static List<String> proficiencies = new ArrayList<>();
+    public static List<String> languages = new ArrayList<>();
+    public static List<String> raceAbilities = new ArrayList<>();
 
     public Race(int strength, int dexterity, int constitution, int intelligence, int wisdom, int carisma) {
         super(strength, dexterity, constitution, intelligence, wisdom, carisma);

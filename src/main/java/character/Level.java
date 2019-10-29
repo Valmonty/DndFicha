@@ -9,7 +9,6 @@ public class Level {
     private boolean levelUp;
 
     public int firstHD(int con) {
-        Classe classe = new Classe();
         int firstHD = 0;
 
         if (getLevel() == 1) {

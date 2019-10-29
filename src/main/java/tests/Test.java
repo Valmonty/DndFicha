@@ -10,9 +10,6 @@ public class Test {
     public static void main(String[] args) {
 
         Elf elf = new Elf(12, 14,10,10,10,10);
-        Level level = new Level();
-        Classe classe = new Classe();
-
 
     }
 }
