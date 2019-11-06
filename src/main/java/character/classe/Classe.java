@@ -15,6 +15,10 @@ public abstract class Classe extends Level {
     public static int skillPoints;
     public static List<String> classAbilities = new ArrayList<>();
 
+    public Classe(int level, int feats, int xp, boolean levelUp) {
+        super(level, feats, xp, levelUp);
+    }
+
     public static String getName() {
         return name;
     }

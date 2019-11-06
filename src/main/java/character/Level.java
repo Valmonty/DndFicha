@@ -8,6 +8,14 @@ public class Level {
     private int xp;
     private boolean levelUp;
 
+    public Level(int level, int feats, int xp, boolean levelUp) {
+        this.level = level;
+        this.quantHD = level;
+        this.feats = feats;
+        this.xp = xp;
+        this.levelUp = levelUp;
+    }
+
     public int firstHD(int con) {
         int firstHD = 0;
 
@@ -18,6 +26,7 @@ public class Level {
         return firstHD;
     }
 
+    //TODO fazer um método que funcione
     public int numeroFeats(int nivel) {
 
         int numeroFeats = 0;
