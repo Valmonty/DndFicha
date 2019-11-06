@@ -1,4 +1,6 @@
-package character;
+package character.classe;
+
+import character.Level;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package character.race.races;
+package character.race;
 
 import character.Status;
 

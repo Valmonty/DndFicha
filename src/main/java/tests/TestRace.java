@@ -1,11 +1,6 @@
 package tests;
 
 import character.race.races.Elf;
-import enums.AbilityScoreType;
-
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Map;
 
 public class TestRace {
 

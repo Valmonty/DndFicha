@@ -1,5 +1,7 @@
 package character.race.races;
 
+import character.race.Race;
+
 public class HalfOrc extends Race {
 
     public HalfOrc(int strength, int dexterity, int constitution, int intelligence, int wisdom, int carisma) {
